@@ -12,11 +12,14 @@ This python provides a stack functionality by performing push and pop operations
 -pop data from the stack at the provided index
 -display the stack contents and check if the connected string is palindrome
 
-**options**
+**Options**
 
 -[1] Push Operation: push/add data to the stack
+
 -[2] Pop Operation: pop data from the stack at the provided index
+
 -[3] Display Stack and Check Palindrome: display the stack and check if it is palindrome
+
 -[4] Exit: exit the program
 
 **Discussion and Reflection**

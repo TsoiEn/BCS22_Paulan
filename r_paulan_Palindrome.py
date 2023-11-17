@@ -42,12 +42,23 @@ class Palindrome:
             if (i not in punc) and (remove_spaces and i != ' '):
                 res += i
         return res
+    
+    def custom_lower(self, input_string):
+        result = ""
+        for char in input_string:
+            if 'A' <= char <= 'Z':
+                result += chr(ord(char) + 32)
+            else:
+                result += char
+        return result
+
 
     # uses the remove_punctuation method and make the string in the stack in lower case
     # returns a new string with new structure
     def clean_string(self, s):
-        cleaned_str = self.remove_punctuation(s).lower()
+        cleaned_str = self.custom_lower(self.remove_punctuation(s))
         return cleaned_str
+
 
     
     def display(self, check_palindrome=True):
